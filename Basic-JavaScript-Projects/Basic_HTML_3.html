@@ -4,8 +4,10 @@
             
     </head>
     <body>
+            <p id="Math"></p>
+            <p id="demo">
             <script src="./JS/Basic_JavaScript_3.js">
-        <p id="Math"></p>
+        
       /* <!-- <p id="tath"></p>
         <p id="mmath"></p>
         <p id="dath"></p>-->*/
@@ -13,9 +15,19 @@
 
     <script>
     function more_Math(){
-    var simple_Math = (1 + 2) * 10 / 2 -5;
+    var simple_Math = (1 + 2) * 10 / 2 - 5;
     document.getElementById("Math").innerHTML = "1 plus 2, multiplied by 10, divided in half and then subtracted by 5 equals " + simple_Math;
     }
+    more_Math();
+
+    function negation_Operator() {
+        var x = 10;
+        x--;
+        document.write(x);
+    }
+    negation_Operator();
+    
+    document.getElementById("demo").innerHTML = Math.PI;
     </script>
 </body>
 
