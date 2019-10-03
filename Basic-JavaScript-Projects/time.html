@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+    <p id="Time_of_day"></p>
+    <button onclick="Time_function()">Click to get the time!</button>
+    <script>
+        function Time_function() {
+            var Time = new Date().getHours();
+            var Reply;
+            if (Time < 12 == Time < 18) {
+                Reply = "it is morning time!";
+            }
+            else if (Time > 12 == Time < 18) {
+                Reply = "it is the afternoon.";
+            }
+            else{ 
+                Reply = "it is evening time.";
+            }
+            document.getElementById("result").innerHTML = Reply;
+        }
+        </script>
+    </head>
+    <body>
+        <p id="result"></p>
+
+    </body>
+
+    </html>
