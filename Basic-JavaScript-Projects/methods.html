@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+   <body>
+    <p>Click the button to convert the string to uppercase letters.</p>
+
+    <button onclick="UpperCase()">Try it</button>
+    <button onclick="mySearch()">Search position.</button>
+
+    <p id="demo"></p>
+    <p id="remo"></p>
+
+
+    <script>
+        function UpperCase() {
+            var str = "Hello World!";
+            var res = str.toUpperCase();
+            document.getElementById("demo").innerHTML = res;
+        }
+
+
+        function mySearch(){
+            var red = "Visit W3Schools!";
+            var n = red.search("W3School");
+            document.getElementById("remo").innerHTML = n;
+        }
+</script>
+   </body>
+
+    </html>
+

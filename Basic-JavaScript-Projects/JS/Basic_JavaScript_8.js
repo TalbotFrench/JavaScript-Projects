@@ -11,3 +11,25 @@ function slice_Method(){
     var Section = Sentence.slice(27,33);
     document.getElementById("Slice").innerHTML = Section;
 }
+
+function string_Method(){
+    var x =156;
+    document.getElementById("Numbers").innerHTML = x.toString();
+}
+
+function precison_Method(){
+    var X = 12938.3012987376112;
+    document.getElementById("Precision").innerHTML = X.toPrecision(10);
+}
+
+function to_Fixed(){
+    var num = 5.56789;
+    var n = num.toFixed(2);
+    document.getElementById("Fixed").innerHtml = n;
+}
+
+function my_Value(){
+    var str = "suh dude!";
+    var res = str.valueOf();
+    document.getElementById("Value").innerHmtl = res;
+}
