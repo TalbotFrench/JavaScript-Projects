@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <body>
+            <script src="JS/Basic_JavaScript_10.js"></script>
+        <!--<p id="Loop"></p>
+        <button onclick="callLoop()">Click here to execute the loop.</button>
+        <button onclick="myFunction()">Try it</button>
+        <p id="demo"></p>
+        -->
+        <p id="List_of_Instruments"></p>
+        <button onclick="for_Loop()">Click here</button>
+
+        <p id="thing"></p>
+        <button onclick="array_Function()">Click here.</button>
+
+        <p id="Constant"></p>
+        <button onclick="constant_function()">function!</button>
+
+        <p id="pie"></p>
+        <p id="Car_Object"></p>
+        <p id="numba"></p>
+
+
+        <script>
+            var text = "";
+            var i;
+            for(i = 0; i < 10; i++){
+                if (i === 3) { continue; }
+                text += "The number is " + i + "<br>";
+            }
+            document.getElementById("numba").innerHTML = text;
+
+        </script>
+    </body>
+</html>
