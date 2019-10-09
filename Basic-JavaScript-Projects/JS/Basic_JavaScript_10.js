@@ -33,7 +33,7 @@ function array_Function(){
     ".";
 }
 
-function constant_function(){
+function constant_function(){ /* This establishes a flag object and declares its price. */
     const Flag = {type:"American", Color:"Red, White & Blue!"};
     Flag.price = "$50";
     document.getElementById("Constant").innerHTML = "The cost of the " + Flag.type +  " flag is $50";

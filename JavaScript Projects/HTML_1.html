@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="./JS/1.js"></script>
+    </head>
+    <body>
+    <h1>What is your favorite animal?</h1>
+    <h3>Pick your favorite animal from this list:</h3>
+    <ul>
+        <li>Cat</li>
+        <li>Dog</li>
+        <li>Horse</li>
+        <li>Fish</li>
+    </ul>
+    <h3>Enter your choice below</h3>
+    <h3 class="Click">This will change!</h3>
+    <h3 class="Click">this shouldnt change!</h3>
+    <button onclick=Change()>click me!</button>
+    <canvas id="myCanvas" width="500" height="250" style="border:5px solid black;"></canvas>
+
+
+    <script>
+        var c = document.getElementsById("myCanvas");
+        var ctx = c.getContext("2d");
+        var grd = ctx.createLinearGradient(0,0,200,0);
+        grd.addColorStop(0,"red");
+        grd.addColorStop(1,"white");
+        ctx.fillStyle = grd;
+        ctx.fillRect(10,10,150,80);
+    </script>
+    <input id="Animal_Input" type="text">
+    <button onclick="Animal_Function()">Submit Animal</button>
+<p id="Output"></p>
+</body>
+</html>
