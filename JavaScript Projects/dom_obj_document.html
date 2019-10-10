@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body onclick="myFunction()">
+
+<p>Click anywhere in the document to display the active element.</p>
+<input type="text" value="write something">
+<button>A Button</button>
+
+<p id="thing"></p>
+
+<script>
+function myFunction() {
+  var x = document.activeElement.tagName;
+  document.getElementById("thing").innerHTML = x;
+}
+</script>
+
+</body>
+</html>
